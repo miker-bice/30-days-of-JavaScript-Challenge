@@ -56,7 +56,7 @@ console.log(sampleSentence.indexOf('because'));
 console.log(sampleSentence.lastIndexOf('because'));
 
 /* search */
-console.log(sampleSentence.search('because'));
+console.log("This is the because " + sampleSentence.search('because'));
 
 let newChallenge =  ' 30 Days Of JavaScript ';
 /* trim */
@@ -111,3 +111,35 @@ randNum = Math.random();
 scopedRandNum = randNum * 101;
 
 console.log(Math.floor(scopedRandNum));
+
+/* generate a random number between 50 and 100 */
+
+let newRandom = Math.random();
+
+let randomNum = newRandom * 51;
+
+console.log(Math.floor(randomNum + 50));
+
+randomNum = Math.floor(newRandom * 255);
+
+console.log(`This is a random number between 0 and 255: ${randomNum}`);
+
+
+/* count the number of the word love */
+
+let loveString = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
+
+let pattern = /love/gi;
+let wordCount = loveString.match(pattern).length;
+
+console.log(`This is how many times the word 'love' is used: ${wordCount}`);
+
+
+let becauseString = 'You cannot end a sentence with because because because is a conjunction';
+
+pattern = /because/gi;
+
+wordCount = becauseString.match(pattern).length;
+
+console.log(`This is how many times the word 'because' appeared: ${wordCount}`);
+
