@@ -27,3 +27,5 @@ let c = Number(prompt('Enter side c: '));
 
 let perimeter = a + b + c;
 console.log(`The perimeter is ${perimeter}`);
+
+
